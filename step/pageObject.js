@@ -8,6 +8,7 @@ export
     }
     redirect() {
         browser.url(this.URL);
+        browser.pause(6000); //Due to additional add
     }
     typeCity(city) {
         browser.selectByVisibleText(this.citySelector, city);
