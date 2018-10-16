@@ -1,0 +1,17 @@
+{
+  "name": "cinepolisbot",
+  "version": "1.0.0",
+  "description": "TestinForCinepolis",
+  "main": "index.js",
+  "repository": "git@github.com:cuboscar/CinepolisBot.git",
+  "author": "cuboscar <43350688+cuboscar@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test:web": "yarn run chimp"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chimp": "^0.51.1"
+  }
+}
