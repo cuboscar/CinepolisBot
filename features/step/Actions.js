@@ -107,7 +107,7 @@ module.exports = function () {
         console.log(movies)
         //console.log(city)
         movies.forEach(element => {
-            browser.pause(3000)
+            browser.pause(6000)
             browser.url(element.link)
             //console.log(browser.getText(pageMovie.CiudadesTagSelector));
             if (browser.getText(pageMovie.CiudadesTagSelector) != city) {
@@ -124,8 +124,8 @@ module.exports = function () {
                 let a = true
                 console.log(horariosVisibles)
                 let horariosAnterior = element.horarios
-                horariosAnterior.forEach((element, index) => {
-                    if (element != horariosVisibles[index]) {
+                horariosAnterior.forEach((element) => {
+                    if (!horariosVisibles.includes(element) && horariosAnterior.length === horariosVisibles.length) {
                         a = false;
                     }
                 });
